@@ -1,15 +1,414 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NALAR.AI</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Halo Dunia!</h1>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">NALAR.</div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#" class="nav-cta">Learn</a></li>
+        </ul>
+    </nav>
+
+    <!-- herro -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- <h1 class="fade-in">Belajar lebih <span>personal</span> <br> <span>Dengan model ai kami</span></h1> -->
+            <h1 class="fade-in">
+                Belajar lebih
+                <span class="word-rotate" id="word-rotate">personal</span><br>
+                <span>Dengan model AI kami</span>
+            </h1>
+
+            <p>Menggabungkan kecanggihan teknologi masa kini dengan nilai-nilai kepemimpinan klasik.</p>
+            <button id="cta-button" class="btn-power">Mulai Sekarang</button>
+        </div>
+    </section>
+
+    <!-- card masalah pendidikan saat ini -->
+    <section class="challenges">
+        <div class="section-header">
+            <h1>Masalah Pendidikan di Indonesia</h1>
+            <p class="sub-title">Tantangan nyata yang dihadapi sistem pendidikan kita dalam mencetak generasi emas 2045.
+            </p>
+        </div>
+
+        <div class="grid-cards">
+            <div class="card card-green">
+                <div class="card-main">
+                    <span class="card-label">AKSESIBILITAS</span>
+                    <h3>Digital Divide</h3>
+                    <p>Kesenjangan infrastruktur digital di daerah 3T Indonesia.</p>
+                </div>
+
+                <div class="card-footer">
+                    <div class="stat">
+                        <span class="stat-label">Daerah Terisolasi</span>
+                        <div class="value"><span class="counter" data-target="12">0</span>k+</div>
+                    </div>
+                    <div class="arrow-btn">→</div>
+                </div>
+            </div>
+
+            <div class="card card-black">
+                <div class="card-main">
+                    <span class="card-label">KUALITAS</span>
+                    <h3>Literacy Crisis</h3>
+                    <p>Tantangan rendahnya tingkat literasi sesuai standar PISA.</p>
+                </div>
+
+                <div class="card-footer">
+                    <div class="stat">
+                        <span class="stat-label">Peringkat PISA</span>
+                        <div class="value"><span class="counter" data-target="70">0</span>/80</div>
+                    </div>
+                    <div class="arrow-btn">→</div>
+                </div>
+            </div>
+
+            <div class="card card-purple">
+                <div class="card-main">
+                    <span class="card-label">SUMBER DAYA</span>
+                    <h3>Beban Guru</h3>
+                    <p>Administrasi berlebih yang menghambat fokus pengajaran.</p>
+                </div>
+
+                <div class="card-footer">
+                    <div class="stat">
+                        <span class="stat-label">Guru Honorer</span>
+                        <div class="value"><span class="counter" data-target="700">0</span>k</div>
+                    </div>
+                    <div class="arrow-btn">→</div>
+                </div>
+            </div>
+
+            <div class="card card-yellow">
+                <div class="card-main">
+                    <span class="card-label">METODOLOGI</span>
+                    <h3>Rote Learning</h3>
+                    <p>Metode menghafal yang menghambat daya nalar kritis.</p>
+                </div>
+
+                <div class="card-footer">
+                    <div class="stat">
+                        <span class="stat-label">Siswa Terdampak</span>
+                        <div class="value"><span class="counter" data-target="65">0</span>%</div>
+                    </div>
+                    <div class="arrow-btn">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- solusi ai untuk masalah pendidikan -->
+    <section class="ai-solution">
+        <div class="ai-wrapper">
+            <!-- KIRI: TEXT + ACCORDION -->
+            <div class="ai-left">
+                <h2>Solusi AI untuk Tantangan Pendidikan</h2>
+                <p class="subtitle">
+                    Teknologi kami dirancang untuk menjawab masalah nyata pendidikan,
+                    bukan sekadar menambah fitur.
+                </p>
+
+                <div class="accordion">
+                    <div class="accordion-item active">
+                        <button class="accordion-header">
+                            🎯 Pembelajaran Personal
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                AI menganalisis kemampuan, kecepatan, dan pola belajar anak
+                                untuk menyusun materi yang paling sesuai secara real-time.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            📉 Mengurangi Beban Guru
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Otomatisasi evaluasi dan rekomendasi materi pembelajaran
+                                agar guru bisa fokus mengajar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            📊 Insight untuk Orang Tua
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Laporan perkembangan anak yang ringkas,
+                                visual, dan mudah dipahami.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  ILUSTRASI -->
+            <div class="ai-right">
+                <img src="asets/Yuppies Designing.png" alt="AI Education Illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- card temukan gaya belajar kamu -->
+    <section class="discovery">
+        <div class="container">
+            <div class="discovery-header">
+                <h2 class="section-title">Discover Your <span>Learning DNA</span></h2>
+                <p>Setiap pemimpin memiliki cara unik dalam menyerap pengetahuan. Temukan kekuatanmu.</p>
+            </div>
+
+            <div class="discovery-grid">
+                <div class="discovery-card">
+                    <div class="discovery-icon">V</div>
+                    <h3>The Visualist</h3>
+                    <p>Anda memahami dunia melalui pola, grafik, dan representasi spasial yang kompleks.</p>
+                    <a href="#" class="discovery-link">Ambil Tes →</a>
+                </div>
+
+                <div class="discovery-card">
+                    <div class="discovery-icon">A</div>
+                    <h3>The Orator</h3>
+                    <p>Kekuatan Anda terletak pada ritme, narasi, dan diskusi mendalam yang memancing ide.</p>
+                    <a href="#" class="discovery-link">Ambil Tes →</a>
+                </div>
+
+                <div class="discovery-card">
+                    <div class="discovery-icon">K</div>
+                    <h3>The Strategist</h3>
+                    <p>Belajar melalui praktik langsung, eksperimen, dan implementasi strategi nyata.</p>
+                    <a href="#" class="discovery-link">Ambil Tes →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cara kerja ai model kami -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">The Intelligence <span>Flow</span></h2>
+
+            <div class="flow-container">
+                <div class="flow-step">
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <h3>Data Gathering</h3>
+                        <p>AI memantau pola interaksi siswa terhadap materi (teks, video, atau kuis adaptif).</p>
+                    </div>
+                </div>
+
+                <div class="flow-arrow"></div>
+
+                <div class="flow-step">
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <h3>Neural Analysis</h3>
+                        <p>Mesin kami memproses ribuan titik data perilaku untuk mendeteksi kecenderungan kognitif.</p>
+                    </div>
+                </div>
+
+                <div class="flow-arrow"></div>
+
+                <div class="flow-step">
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <h3>Style Diagnosis</h3>
+                        <p>Laporan komprehensif diterbitkan, menentukan apakah siswa adalah tipe Visual, Auditory, atau
+                            Kinetic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- foto anggota -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">The Minds Behind <span>The Intelligence</span></h2>
+            <div class="team-grid">
+                <!-- foto 1 -->
+                <div class="member-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=500&h=600"
+                        alt="Team 1">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Julian Grey</h3>
+                            <p class="specialty">AI Architecture</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- foto 2 -->
+                <div class="member-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=500&h=600"
+                        alt="Team 1">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Julian Grey</h3>
+                            <p class="specialty">AI Architecture</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- foto 3 -->
+                <div class="member-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=500&h=600"
+                        alt="Team 1">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Julian Grey</h3>
+                            <p class="specialty">AI Architecture</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- foto 4 -->
+                <div class="member-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=500&h=600"
+                        alt="Team 1">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Julian Grey</h3>
+                            <p class="specialty">AI Architecture</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- foto 5 -->
+                <div class="member-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=500&h=600"
+                        alt="Team 1">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Julian Grey</h3>
+                            <p class="specialty">AI Architecture</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- foto 6 -->
+                <div class="member-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=500&h=600"
+                        alt="Team 1">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Julian Grey</h3>
+                            <p class="specialty">AI Architecture</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- foto 7 -->
+                <div class="member-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=500&h=600"
+                        alt="Team 1">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Julian Grey</h3>
+                            <p class="specialty">AI Architecture</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- foto 8 -->
+                <div class="member-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=500&h=600"
+                        alt="Team 1">
+                    <div class="member-overlay">
+                        <div class="member-info">
+                            <h3>Julian Grey</h3>
+                            <p class="specialty">AI Architecture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <h2 class="footer-brand">KELOMPOK PHP</h2>
+                <div class="footer-line"></div>
+                <p class="footer-subtitle">Intelligence for the Modern Scholar</p>
+            </div>
+
+            <div class="footer-content">
+                <div class="members-layout">
+                    <div class="member-box">
+                        <span class="nim">I.2510162</span>
+                        <span class="name">Muhammad Fikri</span>
+                    </div>
+                    <div class="member-box">
+                        <span class="nim">I.2510676</span>
+                        <span class="name">Nasywa Nayla Azzahra</span>
+                    </div>
+                    <div class="member-box">
+                        <span class="nim">I.2510032</span>
+                        <span class="name">Muhamad Faiz Nasai</span>
+                    </div>
+                    <div class="member-box">
+                        <span class="nim">I.2510660</span>
+                        <span class="name">Ahmad Iqbal</span>
+                    </div>
+                    <div class="member-box">
+                        <span class="nim">I.2510192</span>
+                        <span class="name">Lia Nur Alawiah Wahdah</span>
+                    </div>
+                    <div class="member-box">
+                        <span class="nim">I.2410762</span>
+                        <span class="name">Anas Amin</span>
+                    </div>
+                    <div class="member-box">
+                        <span class="nim">I.2510100</span>
+                        <span class="name">Muhammad Aufa</span>
+                    </div>
+                    <div class="member-box">
+                        <span class="nim">22010108</span>
+                        <span class="name">Nama Anggota Delapan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 ELITE LEARNING INTERFACE • ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="script.js"></script>
 </body>
 
 </html>
