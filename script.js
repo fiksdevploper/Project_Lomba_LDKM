@@ -36,10 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // kata rotasi
 const words = ["personal", "efektif", "menyenangkan"];
 const colors = ["#5CCAA0", "#ECEE8C", "#B79AF2"]; // warna masing-masing kata
-
 let index = 0;
 const wordElement = document.getElementById("word-rotate");
-
 setInterval(() => {
     // fade out
     wordElement.classList.add("fade-out");
@@ -92,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // acordion
 const items = document.querySelectorAll(".accordion-item");
-
 items.forEach(item => {
     const header = item.querySelector(".accordion-header");
     header.addEventListener("click", () => {
@@ -100,5 +97,63 @@ items.forEach(item => {
         item.classList.toggle("active");
     });
 });
-
 // interactive image
+
+// anime js
+const flowSection = document.querySelector('#how-it-works');
+let flowPlayed = false;
+
+const flowObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !flowPlayed) {
+        flowPlayed = true;
+
+        anime.timeline({
+            easing: 'easeOutExpo'
+        })
+            .add({
+                targets: '.flow-step:nth-of-type(1)',
+                opacity: [0, 1],
+                translateY: [30, 0],
+                duration: 600
+            })
+            .add({
+                targets: '.flow-arrow:nth-of-type(2)',
+                scaleX: [0, 1],
+                duration: 400
+            })
+            .add({
+                targets: '.flow-step:nth-of-type(3)',
+                opacity: [0, 1],
+                translateY: [30, 0],
+                duration: 600
+            })
+            .add({
+                targets: '.flow-arrow:nth-of-type(4)',
+                scaleX: [0, 1],
+                duration: 400
+            })
+            .add({
+                targets: '.flow-step:nth-of-type(5)',
+                opacity: [0, 1],
+                translateY: [30, 0],
+                duration: 600
+            });
+    }
+}, { threshold: 0.4 });
+flowObserver.observe(flowSection);
+// anime js end
+
+// team carousel
+const carousel = document.querySelector('.carousel-mode');
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+
+nextBtn.addEventListener('click', () => {
+    // Geser ke kanan sejauh lebar satu kartu + gap
+    carousel.scrollLeft += 374; 
+});
+
+prevBtn.addEventListener('click', () => {
+    // Geser ke kiri
+    carousel.scrollLeft -= 374;
+});

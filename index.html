@@ -7,10 +7,10 @@
     <title>NALAR.AI</title>
     <!-- Clash Display (Fontshare) -->
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
-
     <!-- Poppins (Google Fonts) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- swipper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,24 +27,23 @@
                 <!-- dekstop only -->
                 <li class="dropdown desktop-only-dropdown">
                     <a href="javascript:void(0)" class="dropbtn">
-                        APLIKASI KAMI
+                        Aplikasi Kami
                         <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="m6 9 6 6 6-6" />
                         </svg>
                     </a>
                     <ul class="dropdown-content">
-                        <li><a href="#bedge">Badge</a></li>
                         <li><a href="#how-it-works">AI Flow</a></li>
+                        <li><a href="#bedge">Badge</a></li>
                     </ul>
                 </li>
 
                 <!-- MOBILE ONLY (ISI DROPDOWN) -->
-                <li class="mobile-only"><a href="#bedge">Badge</a></li>
-                <li class="mobile-only"><a href="#how-it-works">AI Flow</a></li>
-
                 <li><a href="#solusi-ai">Solusi AI</a></li>
                 <li><a href="#gaya-belajar-kamu">Gaya Belajar Kamu</a></li>
+                <li class="mobile-only"><a href="#how-it-works">AI Flow</a></li>
+                <li class="mobile-only"><a href="#bedge">Badge</a></li>
                 <li><a href="#anggota-tim" class="nav-cta">Anggota Kami</a></li>
             </ul>
 
@@ -70,6 +69,7 @@
             <button id="cta-button" class="btn-power">Mulai Sekarang</button>
         </div>
     </section>
+    <!-- herro end -->
 
     <!-- card masalah pendidikan saat ini -->
     <section class="challenges" id="masalah-pendidikan">
@@ -147,6 +147,7 @@
             </div>
         </div>
     </section>
+    <!-- card masalah pendidikan saat ini end -->
 
     <!-- solusi ai untuk masalah pendidikan -->
     <section class="ai-solution" id="solusi-ai">
@@ -241,6 +242,7 @@
             </div>
         </div>
     </section>
+    <!-- solusi ai untuk masalah pendidikan end -->
 
     <!-- card temukan gaya belajar kamu -->
     <div class="st-container" id="gaya-belajar-kamu">
@@ -352,7 +354,6 @@
                                     d="M74.3827 19.6169C76.1197 18.5284 74.1125 17.2083 73.0548 18.8063C71.6189 17.3241 70.2293 19.0842 72.167 20.0492C71.0167 21.4852 72.8773 22.5506 73.464 20.8213C74.9462 22.041 76.3358 20.2114 74.3827 19.6169Z"
                                     fill="black" />
                             </svg>
-
                         </div>
                         <div class="st-eye-detail">● ◡ ●</div>
                     </div>
@@ -538,6 +539,7 @@
             </div>
         </div>
     </div>
+    <!-- card temukan gaya belajar kamu end -->
 
     <!-- cara kerja ai model kami -->
     <section class="how-it-works" id="how-it-works">
@@ -548,7 +550,7 @@
 
             <div class="flow-container">
                 <!-- STEP 1 -->
-                <div class="flow-step step-green">
+                <div class="flow-step step-1 step-green">
                     <div class="step-num">01</div>
                     <div class="step-content">
                         <h3>Data Gathering</h3>
@@ -559,10 +561,12 @@
                     </div>
                 </div>
 
-                <div class="flow-arrow"></div>
+                <div class="flow-arrow arrow-1">
+                    <span class="arrow-flow"></span>
+                </div>
 
                 <!-- STEP 2 -->
-                <div class="flow-step step-purple">
+                <div class="flow-step step-2 step-purple">
                     <div class="step-num">02</div>
                     <div class="step-content">
                         <h3>Neural Analysis</h3>
@@ -573,10 +577,12 @@
                     </div>
                 </div>
 
-                <div class="flow-arrow"></div>
+                <div class="flow-arrow arrow-2">
+                    <span class="arrow-flow"></span>
+                </div>
 
                 <!-- STEP 3 -->
-                <div class="flow-step step-yellow">
+                <div class="flow-step step-3 step-yellow">
                     <div class="step-num">03</div>
                     <div class="step-content">
                         <h3>Style Diagnosis</h3>
@@ -586,10 +592,10 @@
                         </p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+    <!-- card kerja ai model kami end -->
 
     <!-- achivement -->
     <section class="achievements" id="bedge">
@@ -621,263 +627,86 @@
             </div>
         </div>
     </section>
+    <!-- achivement end -->
 
     <!-- foto anggota -->
-    <section class="bonito-mix-section" id="anggota-tim">
-        <div class="header-section">
-            <h1>Anggota Kami</h1>
-            <p>Orang-orang keren di balik produk ini</p>
+    <section class="testimonial-section">
+        <div class="header-container">
+            <div class="header-left">
+                <span class="tm-tag">📈 Testimonials</span>
+                <h1>Trusted by Over 15k+<br>Satisfied Clients</h1>
+            </div>
+            <div class="header-right">
+                <p>Convertify has helped businesses across industries enhance their sales performance.</p>
+                <div class="carousel-controls">
+                    <button class="nav-btn prev">⟵</button>
+                    <button class="nav-btn next">⟶</button>
+                </div>
+            </div>
         </div>
 
-        <div class="team-grid-modern">
-            <!-- card 1 -->
-            <div class="bonito-card" style="--accent: #ff99cc;">
-                <div class="card-top">
-                    <span class="index">01/</span>
-                    <div class="arrow">↗</div>
-                </div>
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Member">
-                </div>
-                <div class="card-bottom">
-                    <h3>Muhammad Fikri</h3>
-
-                    <div class="socials">
-                        <!-- linkedin -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                            <rect x="2" y="9" width="4" height="12" />
-                            <circle cx="4" cy="4" r="2" />
-                        </svg>
-
-                        <!-- instagram -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
-                        </svg>
+        <div class="carousel-full-width">
+            <div class="carousel-wrapper">
+                <div class="testimonial-grid carousel-mode">
+                    <div class="tm-card tm-bg-pink">
+                        <img src="asets/unduhan.jpg" alt="Member 1">
+                        <div class="card-content">
+                            <p>"Framify has completely transformed my design workflow!"</p>
+                            <div class="footer-card">
+                                <span class="logo">ATLASSIAN</span>
+                                <div class="info"><strong>John Davis</strong><span>Sales Director</span></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- card 2 -->
-            <div class="bonito-card" style="--accent: #8ce2ff;">
-                <div class="card-top">
-                    <span class="index">02/</span>
-                    <div class="arrow">↗</div>
-                </div>
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Member">
-                </div>
+                    <div class="tm-card tm-bg-brown">
+                        <img src="asets/unduhan.jpg" alt="Member 2">
+                        <div class="card-content">
+                            <p>"The best investment we've made this year."</p>
+                            <div class="footer-card">
+                                <span class="logo">SLACK</span>
+                                <div class="info"><strong>Sarah J.</strong><span>Manager</span></div>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="card-bottom">
-                    <h3>Nasywa Nayla Azzahra</h3>
-                    <!-- linkedin -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                        </path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
+                    <div class="tm-card tm-bg-green">
+                        <img src="asets/unduhan.jpg" alt="Member 3">
+                        <div class="card-content">
+                            <p>"Incredible support and platform!"</p>
+                            <div class="footer-card">
+                                <span class="logo">SHOPIFY</span>
+                                <div class="info"><strong>Mike Chen</strong><span>Founder</span></div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <!-- instagram -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-                    </svg>
-                </div>
-            </div>
+                    <div class="tm-card tm-bg-green">
+                        <img src="asets/unduhan.jpg" alt="Member 3">
+                        <div class="card-content">
+                            <p>"Incredible support and platform!"</p>
+                            <div class="footer-card">
+                                <span class="logo">SHOPIFY</span>
+                                <div class="info"><strong>Mike Chen</strong><span>Founder</span></div>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- card 3 -->
-            <div class="bonito-card" style="--accent: #5CCAA0;">
-                <div class="card-top">
-                    <span class="index">03/</span>
-                    <div class="arrow">↗</div>
-                </div>
-
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Member">
-                </div>
-
-                <div class="card-bottom">
-                    <h3>Muhamad Faiz Nasai</h3>
-                    <!-- linkedin -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                        </path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-
-                    <!-- instagram -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- card 4 -->
-            <div class="bonito-card" style="--accent: #B79AF2;">
-                <div class="card-top">
-                    <span class="index">04/</span>
-                    <div class="arrow">↗</div>
-                </div>
-
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Member">
-                </div>
-
-                <div class="card-bottom">
-                    <h3>Ahmad Iqbal</h3>
-                    <!-- linkedin -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                        </path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-
-                    <!-- instagram -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- card 5 -->
-            <div class="bonito-card" style="--accent: #ff85b2;">
-                <div class="card-top">
-                    <span class="index">05/</span>
-                    <div class="arrow">↗</div>
-                </div>
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Member">
-                </div>
-                <div class="card-bottom">
-                    <h3>SISKA AMALIA</h3>
-                    <!-- linkedin -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                        </path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-
-                    <!-- instagram -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- card 6 -->
-            <div class="bonito-card" style="--accent: #ff8e6e;">
-                <div class="card-top">
-                    <span class="index">06/</span>
-                    <div class="arrow">↗</div>
-                </div>
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Member">
-                </div>
-                <div class="card-bottom">
-                    <h3>SISKA AMALIA</h3>
-                    <!-- linkedin -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                        </path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-
-                    <!-- instagram -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- card 7 -->
-            <div class="bonito-card" style="--accent: #A29BFE;">
-                <div class="card-top">
-                    <span class="index">07/</span>
-                    <div class="arrow">↗</div>
-                </div>
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Member">
-                </div>
-                <div class="card-bottom">
-                    <h3>SISKA AMALIA</h3>
-                    <!-- linkedin -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                        </path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-
-                    <!-- instagram -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- card 8 -->
-            <div class="bonito-card" style="--accent: #FFBE76;">
-                <div class="card-top">
-                    <span class="index">08/</span>
-                    <div class="arrow">↗</div>
-                </div>
-                <div class="card-img">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Member">
-                </div>
-                <div class="card-bottom">
-                    <h3>SISKA AMALIA</h3>
-                    <!-- linkedin -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                        </path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-
-                    <!-- instagram -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-                    </svg>
+                    <div class="tm-card tm-bg-green">
+                        <img src="asets/unduhan.jpg" alt="Member 3">
+                        <div class="card-content">
+                            <p>"Incredible support and platform!"</p>
+                            <div class="footer-card">
+                                <span class="logo">SHOPIFY</span>
+                                <div class="info"><strong>Mike Chen</strong><span>Founder</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- foto anggota end -->
 
     <!-- footer -->
     <footer class="main-footer">
@@ -930,10 +759,12 @@
             </div>
         </div>
     </footer>
+    <!-- footer end -->
 
-    <!-- js -->
+    <!-- js area -->
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 </body>
 
 </html>
