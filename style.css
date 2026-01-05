@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #1a1a1a;
+    background-color: #F8FAFC;
+    color: #0E2148;
     overflow-x: hidden;
 }
 
@@ -300,11 +300,11 @@ p {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     background-color: #3D9CFB;
-    color: #fff;
+    color: #ffffff;
     padding: 18px 40px;
     border-radius: 40px;
-    border: 4px solid #000;
-    box-shadow: 8px 8px 0 #000;
+    border: 4px solid #001434;
+    box-shadow: 8px 8px 0 #001434;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
@@ -313,7 +313,7 @@ p {
 
 .btn-power:active {
     transform: translate(4px, 4px);
-    box-shadow: 0 0 0 #000;
+    box-shadow: 0 0 0 #001434;
 }
 
 @media (max-width: 1024px) {
@@ -406,12 +406,12 @@ p {
 
 .card-green {
     background-color: #5CCAA0;
-    --text: #000;
+    --text: #001434;
     --btn-bg: rgba(0, 0, 0, 0.1);
 }
 
 .card-black {
-    background-color: #121212;
+    background-color: #000;
     --text: #fff;
     --btn-bg: #fff;
     --btn-text: #000;
@@ -419,13 +419,13 @@ p {
 
 .card-purple {
     background-color: #B79AF2;
-    --text: #000;
+    --text: #001434;
     --btn-bg: rgba(0, 0, 0, 0.1);
 }
 
 .card-yellow {
     background-color: #ECEE8C;
-    --text: #000;
+    --text: #001434;
     --btn-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -564,6 +564,7 @@ p {
         font-size: 1.6rem;
     }
 }
+
 /* masalah pendidikan end */
 
 /* solusi inovasi ai */
@@ -700,6 +701,7 @@ p {
         max-width: 320px;
     }
 }
+
 /* end */
 
 /* temukan gaya belajar kamu */
@@ -990,6 +992,7 @@ p {
 .at-section {
     padding: 80px 0;
     background-color: #fff;
+    scroll-margin-top: 100px;
 }
 
 .at-container {
@@ -1032,7 +1035,7 @@ p {
     height: 100%;
     object-fit: contain;
     /* Memberikan sedikit efek filter agar warna masuk ke tema */
-    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.05));
 }
 
 .at-num {
@@ -1044,11 +1047,6 @@ p {
     margin-bottom: -15px;
     transition: 0.3s ease;
 }
-
-/* Warna Aksen */
-.at-step-green { --at-color: #2FAF8F; }
-.at-step-purple { --at-color: #7C6DE6; }
-.at-step-yellow { --at-color: #E6C84F; }
 
 .at-step:hover .at-num {
     color: var(--at-color);
@@ -1074,7 +1072,8 @@ p {
     flex: 0.15;
     height: 2px;
     background: #e0e0e0;
-    margin-top: 170px; /* Menyesuaikan posisi panah karena ada gambar */
+    margin-top: 170px;
+    /* Menyesuaikan posisi panah karena ada gambar */
     position: relative;
 }
 
@@ -1091,25 +1090,33 @@ p {
 }
 
 @media (max-width: 992px) {
+    .at-section {
+        scroll-margin-top: 10px;
+    }
+
     .at-flow-container {
         flex-direction: column;
         gap: 50px;
     }
 
-    .at-arrow { display: none; }
+    .at-arrow {
+        display: none;
+    }
 
     .at-step {
         border-left: 2px solid #eee;
         padding-left: 30px;
         margin-left: 10px;
     }
-    
+
     .at-illustration {
         justify-content: flex-start;
         height: 100px;
     }
 
-    .at-num { font-size: 3.5rem; }
+    .at-num {
+        font-size: 3.5rem;
+    }
 }
 /* flow test belajar end */
 
@@ -1258,11 +1265,6 @@ p {
     justify-content: center;
 }
 
-.nav-btn:hover {
-    background: #ff8c4b;
-    transform: scale(1.1);
-}
-
 .anggota-kami {
     background-color: #fff;
     width: 100%;
@@ -1284,16 +1286,28 @@ p {
     background: #FF8D28;
 }
 
-.coklat {
-    background: #532822;
+.blue {
+    background: #3D9CFB;
+}
+
+.purple {
+    background: #B79AF2;
 }
 
 .green {
     background: #43A574;
 }
 
+.green-light {
+    background: #5CCAA0;
+}
+
 .yellow {
     background: #FFD25A;
+}
+
+.yellow-light {
+    background: #E6C84F;
 }
 
 .podcaster-grid {
@@ -1347,7 +1361,6 @@ p {
 }
 
 .card.active .card-decoration img {
-    /* transform: scale(1.2) rotate(5deg); */
     transform: scale(1.1);
 }
 
@@ -1410,10 +1423,10 @@ p {
     display: inline-flex;
     gap: 15px;
     transition: 0.3s;
-    font-size: 20px;            
-    background: #fff;           
-    border-radius: 8px;         
-    line-height: 1;             
+    font-size: 20px;
+    background: #fff;
+    border-radius: 8px;
+    line-height: 1;
     opacity: 0;
 }
 
@@ -1426,7 +1439,7 @@ p {
 }
 
 .streams a:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
 .card-anggota.active .streams {
@@ -1434,18 +1447,22 @@ p {
 }
 
 @media (max-width: 768px) {
+    .anggota-kami {
+        scroll-margin-top: 130px;
+    }
+
     .member {
-        font-size: 1.5rem; /* Perkecil ukuran font judul di mobile */
+        font-size: 1.5rem;
         line-height: 1.2;
     }
 
     .header-wrapper {
-        margin-bottom: 10px; 
-        padding: 0 5px; 
+        margin-bottom: 10px;
+        padding: 0 5px;
     }
 
     .nav-btn {
-        width: 35px; 
+        width: 35px;
         height: 35px;
         font-size: 0.9rem;
     }
@@ -1551,7 +1568,6 @@ p {
 }
 
 /* Bottom */
-/* Container Bottom yang baru */
 .footer-bottom {
     border-top: 1px solid #e2e8f0;
     padding-top: 32px;
@@ -1560,7 +1576,7 @@ p {
 
 .footer-bottom-content {
     display: flex;
-    justify-content: space-between; /* Ini yang membuat kiri-kanan */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
@@ -1571,7 +1587,7 @@ p {
     font-size: 0.65rem;
     letter-spacing: 1px;
     color: #64748b;
-    margin: 0; /* Menghilangkan margin default p */
+    margin: 0;
 }
 
 /* Styling Link Sosial Media */

@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // kata rotasi
 const words = ["personal", "efektif", "menyenangkan"];
-const colors = ["#3D9CFB", "#ECEE8C", "#B79AF2"]; 
+const colors = ["#3D9CFB","#5CCAA0", "#B79AF2", "#ECEE8C"]; 
 let index = 0;
 const wordElement = document.getElementById("word-rotate");
 setInterval(() => {
